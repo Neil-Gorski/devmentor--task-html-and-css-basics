@@ -4,6 +4,22 @@
   font-style: normal;
 }
 
+.btn {
+  height: 51px;
+  width: 210px;
+  margin: 30px 0;
+  padding: 1px 6px;
+  color: inherit;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  transition: border-radius 100ms linear, background-color 100ms ease;
+}
+
+.btn:hover {
+  border-radius: 20px;
+  cursor: pointer;
+}
 .section__container {
   max-width: 1150px;
   margin: 0 auto;
@@ -61,22 +77,11 @@
 }
 
 .landingpage__downlaod-btn {
-  height: 51px;
-  width: 210px;
-  margin: 30px 0;
-  padding: 1px 6px;
-  color: inherit;
-  font-size: 14px;
   background-color: #25f18b;
-  border-radius: 10px;
-  border: none;
-  transition: border-radius 100ms linear, background-color 100ms ease;
 }
 
 .landingpage__downlaod-btn:hover {
-  border-radius: 20px;
   background-color: #6affb4;
-  cursor: pointer;
 }
 
 .landingpage__container--right {
@@ -147,7 +152,7 @@
   font-size: 14px;
 }
 
-.features__container--card p {
+.features__card--text {
   color: #fffff7;
   margin: 0 0 10px;
   font-size: 14px;
@@ -200,7 +205,10 @@
   height: 757px;
   background-color: #f8f9f9;
 }
-
+.pricing__container--cards {
+  display: flex;
+  justify-content: center;
+}
 .pricing__container--title {
   text-align: center;
 }
@@ -214,17 +222,65 @@
 .pricing__text {
   font-size: 18px;
   margin: 10px 0;
-  padding: 10px 0 0;
+  padding: 10px 0 20px;
   color: #888a88;
 }
 
 .pricing__container--card {
   width: 350px;
+  height: 430px;
+  padding: 0 15px;
   font-size: 14px;
 }
 
 .pricing__card {
   text-align: center;
+  background-color: #f8f9f9;
+  padding: 36px 15px 45px;
+  transition: background-color 5.8s cubic-bezier(0.39, 0.58, 0.57, 1),
+    box-shadow 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  position: relative;
+}
+.pricing__card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.pricing__card--title {
+  margin: 20px 0 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.pricing__card--cost {
+  margin: 10px 0;
+  font-size: 45px;
+  font-weight: 600;
+}
+.pricing__card--cost-intervall {
+  margin: 10px 0;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+.pricing__card--feature {
+  min-height: 120px;
+}
+.pricing__card--feature li::before {
+  content: "\2713";
+  font-size: 18px;
+  margin-right: 8px;
+  color: #3aeb8c;
+}
+
+.pricing__card--btn {
+  background-color: #0abceb;
+  width: 164px;
+  color: #fff;
+  padding-top: auto;
+}
+
+.pricing__card--btn:hover {
+  background-color: #58d5f7;
 }
 .section__team {
   height: 677px;
